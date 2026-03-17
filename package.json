@@ -6,7 +6,7 @@
     "build": "tsc --noEmit",
     "lint": "echo 'lint ok'",
     "typecheck": "tsc --noEmit",
-    "test": "echo 'no tests configured'"
+    "test": "jest --passWithNoTests --forceExit"
   },
   "dependencies": {
     "@nestjs/common": "^10.3.0",
@@ -17,8 +17,11 @@
     "typeorm": "^0.3.17"
   },
   "devDependencies": {
+    "@nestjs/testing": "^11.1.17",
     "@types/jest": "^30.0.0",
     "@types/node": "^20.10.0",
+    "jest": "^30.3.0",
+    "ts-jest": "^29.4.6",
     "typescript": "^5.3.3"
   }
 }
